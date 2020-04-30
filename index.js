@@ -29,7 +29,7 @@ connection.connect(function(err){
 
 exports.start = function(){
 
-    
+    //List of all options
     const optionsArr = ["View Departments", "View Roles", "View Employees", "Add Departments", 
     "Add Roles", "Add Employees", "Update employee's role", "View employees by manager","Delete departments", 
     "Delete roles", "Delete employee", "EXIT"];
