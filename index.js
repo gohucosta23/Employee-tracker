@@ -11,6 +11,7 @@ const viewRoles = require("./lib/viewRoles");
 const viewEmployees = require("./lib/viewEmployees");
 const addDepartment = require("./lib/addDepartment");
 const updateEmployeeRole = require("./lib/updateEmployeeRole");
+const updateEmployeeManager = require("./lib/updateEmployeeManager");
 const viewByManager = require("./lib/viewByManager");
 const addRoles = require("./lib/addRoles");
 const deleteEmployee = require("./lib/deleteEmployee");
@@ -31,7 +32,7 @@ exports.start = function(){
 
     //List of all options
     const optionsArr = ["View Departments", "View Roles", "View Employees", "Add Departments", 
-    "Add Roles", "Add Employees", "Update employee's role", "View employees by manager","Delete departments", 
+    "Add Roles", "Add Employees", "Update employee's role", "Update Employee's Manager","View employees by manager","Delete departments", 
     "Delete roles", "Delete employee", "EXIT"];
     
     inquirer.prompt(
@@ -64,6 +65,9 @@ exports.start = function(){
                 break;
             case "Update employee's role":
                 updateEmployeeRole.updateEmployeeRole();
+                break;
+            case "Update Employee's Manager":
+                updateEmployeeManager.updateEmployeeManager();
                 break;
             case "View employees by manager":
                 viewByManager.viewByManager();
