@@ -17,14 +17,14 @@
 </ul>
 <br>
 
-![Installation Demo](images/employee_tracker.gif)
+![Installation Demo](images/e_tracker.gif)
 
 ## Installation
 <br>
-<p>In order for you to install the app, you (the user), can simply fork this repo or do a git clone. From there, once you are inside index.js you can right click on the file and click on "Open in Terminal". Once the command line window opens you can simply type "npm start". The whole application is ran on the Terminal window, so as soon as the user starts the app, they will be prompted with options or input questions. Also at the end of every "transaction", the user will be given an option to exit or go back to the main menu...</p>
+<p>In order for you to install the app, you (the user), can simply fork this repo or do a git clone. From there, once you are inside index.js you can right click on the file and click on "Open in Terminal". On my previous applications we used "node [fileName]" to start the application, this one however I added a script to the package.json file which allows users to start the application using "npm start". The whole application is ran on the Terminal window, so as soon as the user starts the app, they will be prompted with options or input questions. Also at the end of every "transaction", the user will be given an option to exit or go back to the main menu... </p>
 <br>
 
-<img src = "images/screenshot.png" alt = "screen shot of npm start" width ="600px" height = "600px">
+<img src = "images/screenshot.png" alt = "screen shot of npm start" width ="500px" height = "400px">
 
 ## Questions
 <br>
