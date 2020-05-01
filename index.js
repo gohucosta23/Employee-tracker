@@ -9,6 +9,7 @@ const addEmployee = require("./lib/addemployee");
 const viewDepartments = require("./lib/viewDepartments");
 const viewRoles = require("./lib/viewRoles");
 const viewEmployees = require("./lib/viewEmployees");
+const viewUtilizedBudget = require("./lib/viewUtilizedBudget");
 const addDepartment = require("./lib/addDepartment");
 const updateEmployeeRole = require("./lib/updateEmployeeRole");
 const updateEmployeeManager = require("./lib/updateEmployeeManager");
@@ -31,7 +32,7 @@ connection.connect(function(err){
 exports.start = function(){
 
     //List of all options
-    const optionsArr = ["View Departments", "View Roles", "View Employees", "Add Departments", 
+    const optionsArr = ["View Departments", "View Roles", "View Employees", "View the total utilized budget of a department" , "Add Departments", 
     "Add Roles", "Add Employees", "Update employee's role", "Update Employee's Manager","View employees by manager","Delete departments", 
     "Delete roles", "Delete employee", "EXIT"];
     
@@ -53,6 +54,9 @@ exports.start = function(){
                 break;
             case "View Employees":
                 viewEmployees.viewEmployees();
+                break;
+            case "View the total utilized budget of a department":
+                viewUtilizedBudget.viewUtilizedBudget();
                 break;
             case "Add Departments":
                 addDepartment.addDepartment();
